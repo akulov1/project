@@ -3,10 +3,14 @@
 </script>
 
 <template>
+  <section>
 <div class="competencies without-padding-bottom" >
   <div class="container">
    <!-- ::before -->
     <div class="row">
+      <div class = "col-md-10 time">
+        <h1 class = "competency-title">Наши профессиональные разработчики выполняют быстро любые задачи</h1>
+      </div>
       <div class="row row-flex competencies-row">
         <div class="col-sm-4 col-xs-12">
           <div class="competency">
@@ -69,9 +73,51 @@
     </div>
   </div>
 </div>
+  </section>
 
 </template>
 
 <style scoped>
+html{
+  font-size: 16px;
+}
+img{
+  border: 0;
+}
+
+@media (max-width: 1300px)
+{
+  .container
+  {
+    position: relative;
+    z-index: 15;
+  }
+}
+.competencies
+{
+  padding: 150px 0;
+}
+.logoForOpacity{
+  opacity: 15%;
+  width: 8%;
+  height: 8%
+}
+.competency-title
+{
+  font-size: 42px;
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+.competency-body
+{
+  font-size: 15px;
+  margin-top: 20px;
+}
+.time
+{
+  margin-bottom: 50px;
+}
+
+
 
 </style>
