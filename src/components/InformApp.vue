@@ -154,6 +154,10 @@ export default
   }
 }
 
+.text{
+  color: rgb(128, 128, 128);
+}
+
 .competencies
 {
   padding: 100px 0;
