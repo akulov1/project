@@ -18,6 +18,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                  <!-- ::before -->
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity mt-3"/>
                   <img src="../assets/img/competency-20.svg" class="img-responsive">
                 </div>
               </div>
@@ -36,6 +37,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                   <!-- ::before -->
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity mt-3"/>
                   <img src="../assets/img/competency-21.svg" class="img-responsive">
                 </div>
               </div>
@@ -54,6 +56,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                   <!-- ::before -->
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity mt-3"/>
                   <img src="../assets/img/competency-22.svg" class="img-responsive">
                 </div>
               </div>
