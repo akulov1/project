@@ -20,7 +20,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-9" style = "margin-left: 3em">Добавление информации на сайт, создание новых разделов</div>
+                <div class = "competency-body col-9 text" style = "margin-left: 3em">Добавление информации на сайт, создание новых разделов</div>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-8" style = "margin-left: 3em">Разработка и оптимизация модулей сайта</div>
+                <div class = "competency-body col-8 text" style = "margin-left: 3em">Разработка и оптимизация модулей сайта</div>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-9" style = "margin-left: 3em">Интеграция с CRM, 1С, платёжными системами, любыми веб-сервисами</div>
+                <div class = "competency-body col-9 text" style = "margin-left: 3em">Интеграция с CRM, 1С, платёжными системами, любыми веб-сервисами</div>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-7" style = "margin-left: 3em">Любые доработки функционала и дизайна</div>
+                <div class = "competency-body col-7 text" style = "margin-left: 3em">Любые доработки функционала и дизайна</div>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-7 mt-3 mb-3 " style = "margin-left: 3em">Аудит и мониторинг безопасности Drupal-сайтов</div>
+                <div class = "competency-body col-7 mt-3 mb-3 text " style = "margin-left: 3em">Аудит и мониторинг безопасности Drupal-сайтов</div>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-7" style = "margin-left: 3em">Миграция, импорт контента и апгрейд Drupal</div>
+                <div class = "competency-body col-7 text" style = "margin-left: 3em">Миграция, импорт контента и апгрейд Drupal</div>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-7 " style = "margin-left: 3em">Оптимизация и ускорение Drupal-сайтов</div>
+                <div class = "competency-body col-7 text " style = "margin-left: 3em">Оптимизация и ускорение Drupal-сайтов</div>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
                     </div>
                   </div>
                 </div>
-                <div class = "competency-body col-9" style = "margin-left: 3em">Веб-маркетинг, консультации и работы по SEO</div>
+                <div class = "competency-body col-9 text" style = "margin-left: 3em">Веб-маркетинг, консультации и работы по SEO</div>
               </div>
             </div>
           </div>
