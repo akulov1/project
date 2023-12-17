@@ -56,5 +56,16 @@ h1{
   height: 300px;
 }
 
+.team{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.button_team{
+  color: #292b2c;
+  border-color: #292b2c;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
 
 </style>
