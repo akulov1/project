@@ -32,14 +32,32 @@
               <div class="competency-header">
                 <div class="competency-icon">
                   <!-- ::before -->
-                  <img src="../assets/img/competency-20.svg" class="img-responsive">
+                  <img src="../assets/img/competency-21.svg" class="img-responsive">
                 </div>
               </div>
               <div class="competency-body">
-                <div class="competency-time">от 1ч</div>
-                Настройка события GA
+                <div class="competency-time">от 20ч</div>
+                Разработка мобильной
                 <br>
-                в интернет-магазине
+                версии сайта
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="competency">
+            <div class="competency-wrapper">
+              <div class="competency-header">
+                <div class="competency-icon">
+                  <!-- ::before -->
+                  <img src="../assets/img/competency-22.svg" class="img-responsive">
+                </div>
+              </div>
+              <div class="competency-body">
+                <div class="competency-time">от 8ч</div>
+                Интеграция модуля
+                <br>
+                оплаты
               </div>
             </div>
           </div>
