@@ -3,7 +3,7 @@
     <AppHeader />
     <InformApp />
     <TeamApp />
-    <BehindTariffApp />
+    <
 
 
     <!-- Остальное содержимое вашего приложения -->
