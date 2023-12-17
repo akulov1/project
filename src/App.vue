@@ -3,6 +3,8 @@
     <AppHeader />
     <InformApp />
     <TeamApp />
+    <BehindTariffApp />
+
 
     <!-- Остальное содержимое вашего приложения -->
   </div>
@@ -12,6 +14,7 @@
 import AppHeader from './components/AppHeader.vue';
 import InformApp from './components/InformApp.vue';
 import TeamApp from './components/TeamApp.vue';
+
 
 
 export default {
