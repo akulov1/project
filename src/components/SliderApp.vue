@@ -27,40 +27,44 @@
 <script>
 import $ from 'jquery';
 import 'slick-carousel';
-
-$(document).ready(function() {
-  $('.slider').slick({
-    infinite: true,
-    autoplay: true,
-    dots: true,
-    arrows: false,
-    autoplaySpeed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  });
-})
+export default {
+  mounted() {
+    $(document).ready(function(){
+      $('#slick-slider').slick({
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: false,
+        responsive: 'none',
+        variableWidth: true,
+        centerMode: true,
+        centerPadding: '60px',
+        lazyLoad: 'ondemand',
+        autoplaySpeed: 2000,
+        vertical: false // Добавленная опция для горизонтальной прокрутки
+      });
+      $('#slick-slider2').slick({
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: false,
+        responsive: 'none',
+        variableWidth: true,
+        centerPadding: '60px',
+        lazyLoad: 'ondemand',
+        autoplaySpeed: 2000,
+        vertical: false // Добавленная опция для горизонтальной прокрутки
+      });
+    });
+  }
+}
 </script>
 
 
 <style>
-.slider .slick-dots{
-  padding:0;
-}
-.slider .slick-dots li{
-  position:relative;
-  display:inline-block;
-  width:19%;
-  height:15px;
-  margin:0 2px 0 0;
-  padding:0;
-  cursor:pointer;
-  background-color:#ccbdb6;
-  background-size:100% 100%;
-  background-image:-webkit-gradient(linear, left, right, color-stop(1, rgb(16,56,16)), color-stop(1, transparent));
-  background-image:-o-linear-gradient(left, rgb(16,56,16) 100%, transparent);
-  background-image:-moz-linear-gradient(left, rgb(16,56,16) 100%, transparent);
-  background-image:-webkit-linear-gradient(left, rgb(16,56,16) 100%, transparent);
-  background-image:linear-gradient(to right,rgb(16,56,16) 100%,transparent 100%);
-  background-repeat:no-repeat;
-}
+
 </style>
