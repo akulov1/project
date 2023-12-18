@@ -4,7 +4,8 @@
     <InformApp />
     <TeamApp />
     <BehindeTariff/>
-    <SliderApp/>
+
+    <Slider/>
 
     <!-- Остальное содержимое вашего приложения -->
   </div>
@@ -15,7 +16,7 @@ import AppHeader from './components/AppHeader.vue';
 import InformApp from './components/InformApp.vue';
 import TeamApp from './components/TeamApp.vue';
 import BehindeTariff from './components/BehindeTariff.vue';
-import SliderApp from './components/SliderApp.vue';
+import Slider from './components/Slider.vue';
 
 
 
@@ -25,7 +26,7 @@ export default {
     AppHeader,
     InformApp,
     TeamApp,
-    SliderApp
+    Slider
 
   },
 };
