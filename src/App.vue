@@ -3,9 +3,9 @@
     <AppHeader />
     <InformApp />
     <TeamApp />
-    <BehindeTariff/>
-
-    <Slider/>
+    <BehindeTariff />
+    <TarifApp></TarifApp>
+    <Slider />
 
     <!-- Остальное содержимое вашего приложения -->
   </div>
@@ -17,6 +17,8 @@ import InformApp from './components/InformApp.vue';
 import TeamApp from './components/TeamApp.vue';
 import BehindeTariff from './components/BehindeTariff.vue';
 import Slider from './components/Slider.vue';
+import TarifApp from "./components/TarifApp.vue"
+
 
 
 
@@ -26,16 +28,15 @@ export default {
     AppHeader,
     InformApp,
     TeamApp,
-    Slider
+    Slider,
+    TarifApp
 
   },
 };
 </script>
 
 <style>
-
-*{
+* {
   font-family: 'Montserrat', sans-serif;
 }
-
 </style>
