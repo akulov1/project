@@ -2,26 +2,26 @@
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import Partner from "@/components/Partner.vue";
-import pic1 from "../assets/archive/1.jpg";
-import pic2 from "../assets/image/2.jpg";
-import pic3 from "../assets/image/3.jpg";
-import pic4 from "../assets/image/4.jpg";
-import pic5 from "../assets/image/5.jpg";
-import pic6 from "../assets/image/6.jpg";
-import pic7 from "../assets/image/1.jpg"
-import pic8 from "../assets/image/2.jpg"
-import pic9 from "../assets/image/3.jpg"
-import pic10 from "../assets/image/4.jpg"
-import pic11 from "../assets/image/5.jpg"
-import pic12 from "../assets/image/6.jpg"
-import pic13 from "../assets/image/1.jpg"
-import pic14 from "../assets/image/2.jpg"
-import pic15 from "../assets/image/3.jpg"
-import pic16 from "../assets/image/4.jpg"
-import pic17 from "../assets/image/5.jpg"
-import pic18 from "../assets/image/6.jpg"
-import pic19 from "../assets/image/1.jpg"
-import pic20 from "../assets/image/2.jpg"
+import pic1 from "../assets/kitten/1.jpg";
+import pic2 from "../assets/kitten/2.jpg";
+import pic3 from "../assets/kitten/3.jpg";
+import pic4 from "../assets/kitten/4.jpg";
+import pic5 from "../assets/kitten/5.jpg";
+import pic6 from "../assets/kitten/6.jpg";
+import pic7 from "../assets/kitten/1.jpg"
+import pic8 from "../assets/kitten/2.jpg"
+import pic9 from "../assets/kitten/3.jpg"
+import pic10 from "../assets/kitten/4.jpg"
+import pic11 from "../assets/kitten/5.jpg"
+import pic12 from "../assets/kitten/6.jpg"
+import pic13 from "../assets/kitten/1.jpg"
+import pic14 from "../assets/kitten/2.jpg"
+import pic15 from "../assets/kitten/3.jpg"
+import pic16 from "../assets/kitten/4.jpg"
+import pic17 from "../assets/kitten/5.jpg"
+import pic18 from "../assets/kitten/6.jpg"
+import pic19 from "../assets/kitten/1.jpg"
+import pic20 from "../assets/kitten/2.jpg"
 
 export default {
   name: "WorkWithUs",
