@@ -2,7 +2,7 @@
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import Partner from "@/components/Partner.vue";
-import pic1 from "../assets/foto_for_slider/whiskas.png";
+import pic1 from "../assets/kitten/1.jpg";
 import pic2 from "../assets/kitten/2.jpg";
 import pic3 from "../assets/kitten/3.jpg";
 import pic4 from "../assets/kitten/4.jpg";
