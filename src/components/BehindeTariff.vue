@@ -105,6 +105,10 @@ img{
   width: 8%;
   height: 8%
 }
+.competency{
+  top: 20px;
+
+}
 .competency-title
 {
   font-size: 42px;
@@ -120,7 +124,5 @@ img{
 {
   margin-bottom: 50px;
 }
-
-
 
 </style>
