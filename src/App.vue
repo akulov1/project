@@ -7,6 +7,7 @@
     <TarifApp></TarifApp>
     <Slider />
     <FAQApp/>
+    <FAQNew/>
 
     <!-- Остальное содержимое вашего приложения -->
   </div>
@@ -20,6 +21,7 @@ import BehindeTariff from './components/BehindeTariff.vue';
 import Slider from './components/Slider.vue';
 import TarifApp from "./components/TarifApp.vue"
 import FAQApp from "./components/FAQApp.vue"
+import FAQNew from "./components/FAQNew.vue"
 
 
 
@@ -33,6 +35,7 @@ export default {
     Slider,
     TarifApp,
     FAQApp,
+    FAQNew
 
   },
 };
