@@ -100,7 +100,7 @@
     </div>
     <div class = "text-center mt-2">
       <div class = "container">
-        <a  role = "button" class = "btn btn-outline-light button_team">вся команда</a>
+        <a role = "button" class = "btn btn-outline-light button_team">вся команда</a>
         <!-- href = "#FooterApp" -->
       </div>
     </div>
@@ -166,8 +166,8 @@ h1
 {
   color: #292b2c;
   border-color: #292b2c;
-  width: 30%;
-  margin-bottom: 50px;
+  width: 20%;
+  margin-bottom: 30px;
 }
 
 .team
