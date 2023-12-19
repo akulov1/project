@@ -18,8 +18,7 @@
 
 
 
-<script setup>
-
+<script>
 export default {
   name: "FAQBlock",
   props: {

@@ -86,7 +86,7 @@ header p{
   background-color: transparent;
   color: white;
   padding: 10px 20px;
-  border: 2px solid orange;
+  border: 2px solid #e09600;
 }
 
 .menu.nav li {
@@ -99,9 +99,6 @@ header p{
   position: relative;
 }
 
-.menu.nav li a:hover {
-  color: orange;
-}
 
 .menu.nav li a:hover::after {
   content: '';
@@ -110,7 +107,7 @@ header p{
   right: 0;
   bottom: -2px;
   height: 2px;
-  background-color: orange;
+  background-color: #e09600;
 }
 
 </style>
