@@ -1,147 +1,119 @@
 <template>
-  <header>
-    <hi>FAQ<span>_CORDION</span></hi>
-  </header>
-  <div class="faqs">
-    <FAQBlock
-        v-for="(faq, i) in faqs"
-        :faq="faq"
-        :index="i"
-        :key="i"
-        :open="faq.open"
-        @toggleOpen="toggleOpen"
-    />
-  </div>
+
+    <button @:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
+      <div class="advantage">
+        <li>
+          <div v-bind:class="{ 'header': isClosed, 'header header-opened': !isClosed }">
+            {{ header }}
+          </div>
+          <div v-bind:class="{ 'text': isClosed, 'text text-opened': !isClosed }">
+            {{ text }}
+          </div>
+        </li>
+      </div>
+    </button>
+
 
 </template>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background-color: #EEE;
-  font-family: sans-serif;
-}
-
-header {
-  background-color: #3c3c3c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
-header h1 {
-  color: #EEE;
-  font-size: 28px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-header h1 span {
-  color: #56E3B8;
-  font-weight: 900;
-}
-
-.faq {
-  display: block;
-  width: 100%;
-  max-width: 768px;
-  margin: 15px auto;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  background-color: #FFF;
-}
-
-.faq .question {
-  position: relative;
-  color: #3c3c3c;
-  font-size: 20px;
-  transition: all 0.4s linear;
-}
-
-.faq .question::after {
-  content: '';
-
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%) rotate(0deg);
-
-  width: 30px;
-  height: 30px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  transition: all 0.2s linear;
-}
-.faq.open .question {
-  margin-bottom: 15px;
-}
-.faq.open .question::after {
-  transform: translateY(-50%) rotate(90deg);
-}
-.faq .answer {
-  color: #3c3c3c;
-  font-size: 18px;
-  opacity: 0;
-  max-height: 0px;
-  overflow-y: hidden;
-  transition: all 0.4s ease-out;
-}
-.faq.open .answer {
-  opacity: 1;
-  max-height: 1000px;
-}
-
-</style>
 
 <script setup>
 
 export default {
-  components: {
-    FAQNew
+  name: "FAQBlock",
+  props: {
+    header: {
+      String,
+      required: true,
+    },
+    text: {
+      String,
+      required: true,
+    },
+    isOpen: {
+      type: Boolean,
+      required: true,
+    },
   },
   data () {
     return {
-      faqs: [
-        {
-          question: "Who is the best Superhero?",
-          answer: "I'm not sure but we love him 3000",
-          open: false
-        },
-        {
-          question: "What is Goku's form called with White Hair?",
-          answer: "Mastered Ultra Instinct",
-          open: false
-        },
-        {
-          question: "Have you liked & subscried yet?",
-          answer: "YES",
-          open: false
-        }
-      ]
-    }
+      isClosed: true,
+    };
+  },
+  watch: {
+    isOpen(newValue) {
+      this.isClosed = !newValue;
+    },
   },
   methods: {
-    toggleOpen: function (index) {
-      this.faqs = this.faqs.map((faq, i) => {
-        if (index === i) {
-          faq.open = !faq.open;
-        } else {
-          faq.open = false;
-        }
-
-        return faq;
-      });
-    }
-  }
-}
+    switchBlock() {
+      this.$emit("toggle");
+    },
+  },
+};
 
 </script>
+
+<style scoped>
+li {
+  font-size: 12px;
+  color: #4e5a73;
+}
+
+.button {
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  line-height: 1.5;
+  padding: 10px 30px;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.opened {
+  border-color: #f14d34;
+  margin-bottom: 10px;
+}
+
+.advantage {
+  text-align: left;
+  position: relative;
+  padding: 0 0 0;
+  margin: 0 10px;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 700;
+  color: #050c33;
+  line-height: 1.22;
+  transition: all 0.4s ease;
+  margin-bottom: 15px;
+}
+
+.header-opened {
+  color: #f14d34;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.37;
+  color: #4e5a73;
+  display: none;
+}
+
+.text-opened {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #212529;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage {
+    margin: 0;
+  }
+}
+</style>
