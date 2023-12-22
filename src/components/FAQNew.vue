@@ -1,5 +1,4 @@
 <template>
-
     <button @:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
       <div class="advantage">
         <li>
@@ -12,8 +11,6 @@
         </li>
       </div>
     </button>
-
-
 </template>
 
 
