@@ -20,7 +20,7 @@
             </li>
             <ul class="ddmenu">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown-1" role="button"
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown-1"
                    data-toggle="dropdown" aria-expanded="false">Администрирование</a>
                 <ul class="dropdown-menu dropdown-menu-dark" id="list-1" aria-labelledby="navbarDropdown-1">
                   <li><a class="dropdown-item text-light" href="#">Миграция</a></li>
@@ -42,10 +42,10 @@
                 <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown-2" role="button"
                    data-toggle="dropdown" aria-expanded="false">О нас</a>
                 <ul class="dropdown-menu dropdown-menu-dark" id="list-2" aria-labelledby="navbarDropdown-2">
-                  <li><a class="dropdown-item text-light" href="#">Наша команда</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Отдых</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Достижения</a></li>
-                  <li><a class="dropdown-item text-light" href="#">История</a></li>
+                  <li><a class="dropdown-item" href="#">Наша команда</a></li>
+                  <li><a class="dropdown-item" href="#">Отдых</a></li>
+                  <li><a class="dropdown-item" href="#">Достижения</a></li>
+                  <li><a class="dropdown-item" href="#">История</a></li>
                 </ul>
               </li>
             </ul>
@@ -61,7 +61,7 @@
     </div>
     <div class=" header-data container-fluid">
       <div class="row d-flex" id="header-data">
-        <div class="justify-content-center col-10 col-lg-5 text-start me-auto ms-4 py-5 px-5">
+        <div class="col-10 col-lg-5 text-start py-5 px-5">
           <h1 class="text-about-main col-8">Поддержка сайтов на Drupal</h1>
           <div class="text-about-service col-6">Сопровождение и поддержка сайтов на CMS Drupal любых версий и
             запущенности
@@ -70,7 +70,7 @@
         </div>
         <div class="col-11 col-lg-6 me-sm-3 mx-auto mt-3 pb-lg-0 py-5">
           <div class="row">
-            <div class="col-5 col-sm-4 achievement-tab ms-auto me-auto">
+            <div class="col-5 col-sm-4 achievement-tab">
               <div class="row">
                 <div class="col-3 achievement-tab-title-main">#1</div>
                 <div class="col ms-2">
@@ -121,18 +121,14 @@ export default {
 }
 
 .ddmenu li {
-  justify-content: center;
   list-style-type: none;
   text-align: center;
   text-transform: uppercase;
-  width: 160px;
-  padding: 0;
+  font-size: 12px;
 }
 
 .ddmenu a {
   color: white;
-  text-decoration: none;
-  display: block;
   text-align: center;
 }
 
@@ -140,13 +136,6 @@ export default {
 .dropdown-menu
 {
   background-color: #f14d34;
-}
-
-.ddmenu ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  display: none;
 }
 
 .ddmenu li:hover ul {
@@ -181,9 +170,11 @@ export default {
   width: 220px;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   transition: background 300ms;
   padding: 20px 22px;
+
+  margin-left: 50%;
 }
 
 .btn-tariff:hover {
@@ -208,27 +199,26 @@ export default {
 
 .extra-text {
   margin-top: 30px;
-  font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .achievement-tab-title-main {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .achievement-tab-title {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   font-weight: bold;
   line-height: 1;
-  margin-top: 12px;
-  position: relative;
+  margin-top: 13px;
 }
 
 .text-about-service {
   font-size: 14px;
+  margin-left: 45%;
 }
 
 .text-about-main {
@@ -236,11 +226,12 @@ export default {
   line-height: 60px;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-left: 45%;
 }
 
 .nav-link {
-  width: 160px;
+  margin: 10px;
+  font-size: 13px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -255,11 +246,11 @@ export default {
 
 
 .navbar-effect {
-  border-bottom: 1px solid #f14d34;
+  border-bottom: 3px solid #f14d34;
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid #f14d34;
+  border-bottom: 3px solid #f14d34;
 }
 
 .navbar-region {
