@@ -1,23 +1,7 @@
-<template>
-    <button @:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
-      <div class="advantage">
-        <li>
-          <div v-bind:class="{ 'header': isClosed, 'header header-opened': !isClosed }">
-            {{ header }}
-          </div>
-          <div v-bind:class="{ 'text': isClosed, 'text text-opened': !isClosed }">
-            {{ text }}
-          </div>
-        </li>
-      </div>
-    </button>
-</template>
-
-
 
 <script>
 export default {
-  name: "FAQBlock",
+  name: "FAQNew",
   props: {
     header: {
       String,
@@ -50,6 +34,21 @@ export default {
 };
 
 </script>
+
+<template>
+  <button @:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
+    <div class="advantage">
+      <li>
+        <div v-bind:class="{ 'header': isClosed, 'header header-opened': !isClosed }">
+          {{ header }}
+        </div>
+        <div v-bind:class="{ 'text': isClosed, 'text text-opened': !isClosed }">
+          {{ text }}
+        </div>
+      </li>
+    </div>
+  </button>
+</template>
 
 <style scoped>
 li {

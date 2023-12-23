@@ -6,12 +6,10 @@
     <BehindeTariff />
     <TeamApp />
     <CaseApp/>
-
     <Slider />
     <FAQApp/>
-    <FAQNew/>
+    <FAQBlock/>
 
-    <!-- Остальное содержимое вашего приложения -->
   </div>
 </template>
 
@@ -23,8 +21,8 @@ import BehindeTariff from './components/BehindeTariff.vue';
 import Slider from './components/Slider.vue';
 import TarifApp from "./components/TarifApp.vue";
 import FAQApp from "./components/FAQApp.vue";
-import FAQNew from "./components/FAQNew.vue";
 import CaseApp from "@/components/CaseApp.vue";
+import FAQBlock from "@/components/FAQBlock.vue";
 
 
 
@@ -38,7 +36,6 @@ export default {
     Slider,
     TarifApp,
     FAQApp,
-    FAQNew,
     CaseApp
 
   },
@@ -46,6 +43,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 * {
   font-family: 'Montserrat', sans-serif;
 }
