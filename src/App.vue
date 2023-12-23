@@ -9,10 +9,7 @@
     <CaseApp />
     <Slider />
 
-
-
-
-
+    <FAq/>
 
 
 
@@ -29,11 +26,19 @@ import PodderzhkaAndExpertiseApp from './components/PodderzhkaAndExpertiseApp.vu
 import TarifApp from "./components/TarifApp.vue";
 import CaseApp from "@/components/CaseApp.vue";
 
+import FAq from "@/components/FAq.vue";
+
 
 
 
 export default {
   components: {
+<<<<<<< HEAD
+=======
+    FAq,
+
+
+>>>>>>> 1c5937d48a72de3bc2ff15c5ea8063a5c68f2e64
     BehindeTariff,
     AppHeader,
     InformApp,

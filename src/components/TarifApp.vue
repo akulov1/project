@@ -123,7 +123,10 @@
 
 #block-tariffs {
     padding: 160px 0 90px;
+<<<<<<< HEAD
     font-family: Montserrat;
+=======
+>>>>>>> 1c5937d48a72de3bc2ff15c5ea8063a5c68f2e64
     background: url(../assets/img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: 100%
 }
