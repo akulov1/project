@@ -58,7 +58,7 @@
                             <div class="tariff">
                                 <div class="tariff-wrapper">
                                     <div class="tariff-header">
-                                        <div class="tariff-title">ENTERPRISE</div><br>
+                                        <div class="tariff-title">VIP</div><br>
                                         <div class="tariff-price small">От 300 000<span class="rub enterprise">₽</span>
                                         </div>
                                     </div>

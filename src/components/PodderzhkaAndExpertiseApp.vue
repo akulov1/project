@@ -369,6 +369,7 @@
 
 .expertise .container {
     position: relative;
+    margin-left: 45%;
     z-index: 15
 }
 
