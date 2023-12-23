@@ -7,8 +7,13 @@
     <TeamApp />
     <CaseApp/>
     <Slider />
-    <FAQApp/>
-    <FAQBlock/>
+
+
+
+    <FAq/>
+
+
+
 
   </div>
 </template>
@@ -20,23 +25,26 @@ import TeamApp from './components/TeamApp.vue';
 import BehindeTariff from './components/BehindeTariff.vue';
 import Slider from './components/Slider.vue';
 import TarifApp from "./components/TarifApp.vue";
-import FAQApp from "./components/FAQApp.vue";
 import CaseApp from "@/components/CaseApp.vue";
-import FAQBlock from "@/components/FAQBlock.vue";
 
 
+
+import FAq from "@/components/FAq.vue";
 
 
 export default {
   components: {
-    FAQBlock,
+    FAq,
+
+
+
+
     BehindeTariff,
     AppHeader,
     InformApp,
     TeamApp,
     Slider,
     TarifApp,
-    FAQApp,
     CaseApp
 
   },
