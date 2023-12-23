@@ -8,10 +8,7 @@
     <CaseApp />
     <Slider />
 
-
-
-
-
+    <FAq/>
 
 
 
@@ -27,11 +24,14 @@ import Slider from './components/Slider.vue';
 import TarifApp from "./components/TarifApp.vue";
 import CaseApp from "@/components/CaseApp.vue";
 
+import FAq from "@/components/FAq.vue";
+
 
 
 
 export default {
   components: {
+    FAq,
 
 
     BehindeTariff,

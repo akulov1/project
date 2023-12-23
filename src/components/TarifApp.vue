@@ -123,13 +123,12 @@
 
 #block-tariffs {
     padding: 160px 0 90px;
-    font-family: Montserrat;
-    background: url(project/src/assets/img/D-background-opacity.svg) no-repeat right top, #fff;
+    background: url(../assets/img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: 100%
 }
 
 .bg-cubes {
-    background: url(project/src/assets/img/D-background-opacity.svg) no-repeat right top, #fff;
+    background: url(../assets/img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: 58%
 }
 
@@ -276,7 +275,7 @@
     left: 0;
     width: 13px;
     height: 10px;
-    background: url(project/src/assets/img/galka.svg) no-repeat center;
+    background: url(../assets/img/galka.svg) no-repeat center;
     background-size: contain
 }
 
