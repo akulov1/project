@@ -110,6 +110,12 @@
     margin-bottom: 75px
 }
 
+.row {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+
 .row-flex:after,
 .row-flex:before {
     width: 0
@@ -118,9 +124,15 @@
 #block-tariffs {
     padding: 160px 0 90px;
     font-family: Montserrat;
-    /* background: url(img/drupal-coder.svg) no-repeat right top, #fff; */
+    background: url(project/src/assets/img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: 100%
 }
+
+.bg-cubes {
+    background: url(project/src/assets/img/D-background-opacity.svg) no-repeat right top, #fff;
+    background-size: 58%
+}
+
 
 #block-tariffs .block-title {
     margin-top: 0;
@@ -151,11 +163,40 @@
     transition: all .5s;
     transform-origin: center;
     margin-bottom: 30px;
-    max-width: 500px
+    max-width: 500px;
+    text-align: left;
+    justify-content: center;
 }
 
 .tariffs-row.two-items .tariff {
     margin: auto auto 30px
+}
+
+.tariffs-row.two-items .tariff-wrapper {
+    width: 400px
+}
+
+.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff {
+    transform: initial;
+    box-shadow: none
+}
+
+.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff .tariff-footer-btn {
+    color: #f89c91;
+    background: #fff
+}
+
+.tariff:hover,
+.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff:hover {
+    transform: scale(1.1);
+    z-index: 15;
+    box-shadow: 0px 4px 60px rgba(162, 162, 162, .25)
+}
+
+.tariff:hover .tariff-footer-btn,
+.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff:hover .tariff-footer-btn {
+    color: #fff;
+    background: #f14d34
 }
 
 .tariff-wrapper {
@@ -167,9 +208,7 @@
     padding-bottom: 80px
 }
 
-.tariffs-row.two-items .tariff-wrapper {
-    width: 400px
-}
+
 
 .tariff-header {
     border-bottom: 2px solid #e5e5e5;
@@ -237,20 +276,22 @@
     left: 0;
     width: 13px;
     height: 10px;
+    background: url(project/src/assets/img/galka.svg) no-repeat center;
     background-size: contain
 }
 
-.tarrif-body-item.plus:before,
+/* .tarrif-body-item.plus:before,
 .tariff-body-item.plus:before {
-
+    background: url(/themes/custom/bootstrap_dc/css/../images/plus.svg) no-repeat center;
     background-size: contain;
     height: 13px
 }
 
 .tarrif-body-item.minus:before,
 .tariff-body-item.minus:before {
+    background: url(/themes/custom/bootstrap_dc/css/../images/minus.svg) no-repeat center; 
     background-size: contain
-}
+} */
 
 .tariff-footer-btn {
     text-decoration: none;
@@ -290,28 +331,7 @@
     background: #f14d34
 }
 
-.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff {
-    transform: initial;
-    box-shadow: none
-}
 
-.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff .tariff-footer-btn {
-    color: #f89c91;
-    background: #fff
-}
-
-.tariff:hover,
-.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff:hover {
-    transform: scale(1.1);
-    z-index: 15;
-    box-shadow: 0px 4px 60px rgba(162, 162, 162, .25)
-}
-
-.tariff:hover .tariff-footer-btn,
-.tariffs .tariffs-row:hover .col-flex:nth-of-type(2n) .tariff:hover .tariff-footer-btn {
-    color: #fff;
-    background: #f14d34
-}
 
 .tariffs-ps {
     text-align: center;
@@ -322,6 +342,8 @@
     max-width: 100%;
     margin: 0 auto
 }
+
+
 
 .tariffs-link {
     display: block;
