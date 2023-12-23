@@ -31,7 +31,7 @@ import CaseApp from "@/components/CaseApp.vue";
 
 export default {
   components: {
-      BehindeTariff,
+    BehindeTariff,
     AppHeader,
     InformApp,
     TeamApp,
