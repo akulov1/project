@@ -2,7 +2,8 @@
   <div id="app">
     <AppHeader />
     <InformApp />
-    <TarifApp></TarifApp>
+    <PodderzhkaAndExpertiseApp />
+    <TarifApp />
     <BehindeTariff />
     <TeamApp />
     <CaseApp />
@@ -24,6 +25,7 @@ import InformApp from './components/InformApp.vue';
 import TeamApp from './components/TeamApp.vue';
 import BehindeTariff from './components/BehindeTariff.vue';
 import Slider from './components/Slider.vue';
+import PodderzhkaAndExpertiseApp from "./components/PodderzhkaAndExpertiseApp"
 import TarifApp from "./components/TarifApp.vue";
 import CaseApp from "@/components/CaseApp.vue";
 
@@ -39,6 +41,7 @@ export default {
     InformApp,
     TeamApp,
     Slider,
+    PodderzhkaAndExpertiseApp,
     TarifApp,
     CaseApp
 
