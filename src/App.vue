@@ -10,7 +10,7 @@
 
 
 
-    <FAq/>
+
 
 
 
@@ -29,14 +29,9 @@ import CaseApp from "@/components/CaseApp.vue";
 
 
 
-import FAq from "@/components/FAq.vue";
-
 
 export default {
   components: {
-    FAq,
-
-
 
 
     BehindeTariff,
