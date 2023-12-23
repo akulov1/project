@@ -430,4 +430,5 @@
     color: rgba(256, 256, 256, .7);
     width: 260px;
     max-width: 100%
-}</style>
+}
+</style>

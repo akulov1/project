@@ -25,7 +25,7 @@ import InformApp from './components/InformApp.vue';
 import TeamApp from './components/TeamApp.vue';
 import BehindeTariff from './components/BehindeTariff.vue';
 import Slider from './components/Slider.vue';
-import PodderzhkaAndExpertiseApp from "./components/PodderzhkaAndExpertiseApp"
+import PodderzhkaAndExpertiseApp from './components/PodderzhkaAndExpertiseApp.vue';
 import TarifApp from "./components/TarifApp.vue";
 import CaseApp from "@/components/CaseApp.vue";
 
@@ -34,8 +34,6 @@ import CaseApp from "@/components/CaseApp.vue";
 
 export default {
   components: {
-
-
     BehindeTariff,
     AppHeader,
     InformApp,
