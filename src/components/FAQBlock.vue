@@ -1,3 +1,29 @@
+
+
+<script>
+import FAQNew from "../components/FAQNew.vue";
+export default {
+  name: "FAQBlock",
+  components: { FAQNew },
+  data: ()=>{
+    return{
+      header_1:"Кто непосредственно занимется поддержкой?",
+      text_1:"Сайты поддерживают штатные сотрудники ООО «Инитлаб», г.\n" +
+          "    Краснодар, прошедшие специальное обучение и имеющие опыт\n" +
+          "    работы с Друпал от 4 до 15 лет: 8 web-разработчиков, 2\n" +
+          "    специалиста по SEO, 4 системных администратора.",
+      currentOpenBlock: null,
+
+    }
+  },
+  methods: {
+    setCurrentOpenBlock(index) {
+      this.currentOpenBlock = this.currentOpenBlock === index ? null : index;
+    },
+  },
+}
+</script>
+
 <template>
   <div class="support-main-block">
     <div class="container">
@@ -16,29 +42,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import FAQNew from "../components/FAQNew.vue";
-export default {
-  name: "FAQBlock",
-  components: { FAQNew },
-  data: ()=>{
-    return{
-      header_1:"Кто непосредственно занимется поддержкой?",
-      text_1:"Сайты поддерживают штатные сотрудники ООО «Инитлаб», г.\n" +
-          "    Краснодар, прошедшие специальное обучение и имеющие опыт\n" +
-          "    работы с Друпал от 4 до 15 лет: 8 web-разработчиков, 2\n" +
-          "    специалиста по SEO, 4 системных администратора."
-
-    }
-  },
-  methods: {
-    setCurrentOpenBlock(index) {
-      this.currentOpenBlock = this.currentOpenBlock === index ? null : index;
-    },
-  },
-}
-</script>
 
 <style>
 .support-main-block {
