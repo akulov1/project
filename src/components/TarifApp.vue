@@ -23,7 +23,7 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#block-podderzhkasaytovkontaktnayaforma"
+                                        <a href="#FooterApp"
                                             class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#block-podderzhkasaytovkontaktnayaforma"
+                                        <a href="#FooterApp"
                                             class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#block-podderzhkasaytovkontaktnayaforma"
+                                        <a href="#FooterApp"
                                             class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
                             <div class="tariffs-ps">
                                 Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные
                                 условия!
-                                <a href="#block-podderzhkasaytovkontaktnayaforma" class="contact-form tariffs-link">Получить
+                                <a href="#FooterApp" class="contact-form tariffs-link">Получить
                                     индивидуальный тариф</a>
                             </div>
                         </div>

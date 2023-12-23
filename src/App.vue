@@ -8,8 +8,8 @@
     <TeamApp />
     <CaseApp />
     <Slider />
-    <FooterApp />
     <FAq/>
+    <FooterApp />
   </div>
 </template>
 
