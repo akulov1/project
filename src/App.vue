@@ -2,12 +2,12 @@
   <div id="app">
     <AppHeader />
     <InformApp />
-    <TarifApp></TarifApp>
+    <TarifApp />
     <BehindeTariff />
     <TeamApp />
     <CaseApp />
     <Slider />
-
+    <FooterApp />
 
 
 
@@ -26,22 +26,20 @@ import BehindeTariff from './components/BehindeTariff.vue';
 import Slider from './components/Slider.vue';
 import TarifApp from "./components/TarifApp.vue";
 import CaseApp from "@/components/CaseApp.vue";
-
+import FooterApp from "@/components/FooterApp.vue";
 
 
 
 export default {
   components: {
-
-
     BehindeTariff,
     AppHeader,
     InformApp,
     TeamApp,
     Slider,
     TarifApp,
-    CaseApp
-
+    CaseApp,
+    FooterApp
   },
 };
 </script>
