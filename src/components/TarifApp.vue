@@ -125,7 +125,8 @@
     padding: 160px 0 90px;
     font-family: Montserrat;
     background: url("../assets/img/D-background-opacity.svg") no-repeat right top, #fff;
-    background-size: 100%
+    background-size: 100%;
+    width: 100%;
 }
 
 .bg-cubes {
@@ -260,7 +261,6 @@
     margin-bottom: 18px;
     line-height: 1.2;
     font-size: 16px;
-    font-weight: 100;
     position: relative;
     padding-left: 30px;
     color: #4e5972;
