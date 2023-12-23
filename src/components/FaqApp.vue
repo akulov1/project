@@ -67,8 +67,8 @@ li {
 
 .opened {
   border-color: #f14d34;
+  border-radius: 10px;
   margin-bottom: 10px;
-  height: 10%;
 }
 
 .advantage {
