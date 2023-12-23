@@ -116,6 +116,10 @@ export default {
 
 <style scoped>
 
+header{
+  max-height: 100%;
+}
+
 .ddmenu {
   display: flex;
 }
@@ -146,7 +150,7 @@ export default {
   position: absolute;
   z-index: -1;
   width: 40%;
-  height: 130%;
+  height: 100%;
 }
 
 .video-back {
@@ -173,7 +177,6 @@ export default {
   font-size: 13px;
   transition: background 300ms;
   padding: 20px 22px;
-
   margin-left: 50%;
 }
 

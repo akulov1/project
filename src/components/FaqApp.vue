@@ -68,13 +68,14 @@ li {
 .opened {
   border-color: #f14d34;
   margin-bottom: 10px;
+  height: 10%;
 }
 
 .advantage {
   text-align: left;
-  position: relative;
   padding: 0 0 0;
-  margin: 0 10px;
+  min-height: 1px;
+  max-height: 100%;
 }
 
 .header {
@@ -100,7 +101,6 @@ li {
 .text-opened {
   display: block;
   font-size: 1rem;
-  font-weight: 400;
   color: #212529;
 }
 
