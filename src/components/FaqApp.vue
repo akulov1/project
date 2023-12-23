@@ -35,7 +35,7 @@ export default {
 
 <template>
   <button v-on:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
-    <div class="advantage">
+    <div class="advantage_f">
       <li>
         <div v-bind:class="{ 'header': isClosed, 'header header-opened': !isClosed }">
           {{ header }}
@@ -67,13 +67,12 @@ li {
 
 .opened {
   border-color: #f14d34;
-  border-radius: 10px;
+
   margin-bottom: 10px;
 }
 
-.advantage {
+.advantage_f {
   text-align: left;
-  padding: 0 0 0;
   min-height: 1px;
   max-height: 100%;
 }
