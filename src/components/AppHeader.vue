@@ -121,7 +121,7 @@
                 id="Dropdown4"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-            >Администрирование</a>
+            >Администрирование</a><!--Добавить стрелочку вниз, пофиксить данное меню-->
             <ul aria-labelledby="Dropdown4" class="dropdown-menu show">
               <li><a class="dropdown-item" href="#">Миграция</a></li>
               <li><a class="dropdown-item" href="#">Бэкапы</a></li>
