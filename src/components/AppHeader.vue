@@ -158,8 +158,8 @@
               </li>
             </ul>
           </li>
-          <li><a class="dropdown-item" href="#">Проекты</a></li>
-          <li><a class="dropdown-item" href="#">Контакты</a></li>
+          <li><a class="dropdown-item" href="#CaseApp">Проекты</a></li>
+          <li><a class="dropdown-item" href="#FooterApp">Контакты</a></li>
         </ul>
       </div>
       <!--MobileNav --->
@@ -180,7 +180,7 @@
             на CMS Drupal любых версий и запущенности
           </div>
           <div class="main-info-btn">
-            <a href="#TarifApp" class="main-btn"> ТАРИФЫ </a>
+            <a href="#block-tariffs" class="main-btn"> ТАРИФЫ </a>
           </div>
         </div>
         <div class="col-md-6">
