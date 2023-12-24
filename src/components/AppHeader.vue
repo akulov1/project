@@ -252,6 +252,9 @@ export default {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+a{
+  text-decoration: none;
+}
 .container {
   max-width: 100%;
   margin-left: auto;
@@ -340,6 +343,7 @@ nav {
   opacity: 1;
   background-color: #f14d34;
   border-radius: 0;
+
 }
 .btn-group .dropdown-menu {
   position: relative;
@@ -347,6 +351,7 @@ nav {
   top: 0;
   bottom: -10px;
   border: 0;
+
 }
 .btn-group .dropdown-item.active {
   color: #f14e3b;
@@ -359,9 +364,11 @@ nav {
 .header-navigation .dropdown-item:hover {
   background: #d13018;
   color: #fff;
+
 }
 .btn-group.dropup {
   position: static;
+
 }
 .invisible {
   opacity: 0;
@@ -375,7 +382,7 @@ nav {
 
 .btn-group .dropdown-menu.show {
   width: 100%;
-  bottom: 40px !important;
+  bottom: 40px;
 }
 .btn-group.dropup .dropdown-toggle::after {
   display: none;
@@ -392,6 +399,7 @@ nav {
   text-transform: uppercase;
   color: white;
   transition: color 0.3s ease;
+
 }
 .btn-group .dropdown-item span img {
   width: 9px;

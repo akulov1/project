@@ -7,6 +7,7 @@
     <BehindeTariff />
     <TeamApp />
     <CaseApp />
+    <AppReview/>
     <Slider />
     <FAq/>
     <FooterApp />
@@ -24,6 +25,7 @@ import TarifApp from "./components/TarifApp.vue";
 import CaseApp from "@/components/CaseApp.vue";
 import FooterApp from "@/components/FooterApp.vue";
 import FAq from "@/components/FAq.vue";
+import AppReview from "@/components/AppReview.vue";
 
 
 
@@ -39,6 +41,7 @@ export default {
     PodderzhkaAndExpertiseApp,
     TarifApp,
     CaseApp,
+    AppReview,
     FooterApp
   },
 };

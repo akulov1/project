@@ -121,8 +121,6 @@ export default {
   position: relative;
   text-decoration: none;
   color: #fff;
-
-
 }
 
 .email {

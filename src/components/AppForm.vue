@@ -54,6 +54,8 @@ export default {
 .btn-footer{
   background: #f14d34;
   color: #fff;
-  border: #f14d34;
+}
+.btn-footer:hover{
+  background: #d13018;
 }
 </style>
