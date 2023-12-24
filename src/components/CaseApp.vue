@@ -49,17 +49,12 @@
         </article>
       </div>
 
-      <div class="blog-guts col-12 col-md-4 paket">
-
+      <div class="blog-guts col-12 col-md-4">
         <article>
           <a href="#">
-
             <div class="cringe position-relative">
-
-              <div class="blog-image-internalized">
-                <img src="@/assets/img/picture_3.jpg" class="img-fluid" alt="3" />
-                <div class="paket"></div>
-              </div>
+              <img class="img-fluid" src="@/assets/img/img_case3.jpeg" />
+              <div class="paket"></div>
               <div class="header-date header-date-internalized px-3 py-4">
                 <h5>
                   <b>
@@ -160,7 +155,30 @@
   color: inherit;
 }
 
+.cringe {
+  position: relative;
+  border-radius: 5px;
+}
 
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.paket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+}
+
+.header-date {
+  z-index: 1;
+}
 
 
 .blog-guts a:hover h5:hover {
