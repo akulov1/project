@@ -360,8 +360,8 @@
     bottom: 0;
     left: 0;
     opacity: 0.2;
-    background: url("../assets/img/druplar_logo.svg") no-repeat right bottom;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(24, 24, 24, 0.85) 100%), url("../assets/img/druplar_logo.svg");
+    background: url("../assets/img/druplar-logo.svg") no-repeat right bottom;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(24, 24, 24, 0.85) 100%), url("../assets/img/druplar-logo.svg");
     background-size: contain;
     z-index: 10
 }
