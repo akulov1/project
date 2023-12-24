@@ -158,7 +158,7 @@
             <div class="expertise">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-xs-12 col-md-offset-6">
+                        <div class="col-md-6 col-xs-12 col-md-offset-6 m-auto">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h2 class="block-title">Экспертиза в Drupal,<br> опыт 17 лет!</h2>
