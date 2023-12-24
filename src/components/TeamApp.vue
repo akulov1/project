@@ -100,7 +100,8 @@
     </div>
     <div class = "text-center mt-2">
       <div class = "container">
-        <a role = "button" class = "btn btn-outline-light button_team">вся команда</a>
+        <a role = "button" class = "btn btn-outline-light  btn-lg button_team">вся команда</a>
+
         <!-- href = "#FooterApp" -->
       </div>
     </div>
@@ -116,69 +117,60 @@ export default
 
 <style scoped>
 
-@media (max-width: 990px)
-{
+@media (max-width: 990px) {
   .ots1, .ots2, .ots3, .ots4, .ots5
   {
     margin-left: 200px;
   }
 }
 
-@media (max-width: 750px)
-{
+@media (max-width: 750px) {
   .ots1, .ots2, .ots3, .ots4, .ots5
   {
     margin-left: 110px;
   }
 }
 
-@media (max-width: 590px)
-{
+@media (max-width: 590px) {
   .ots1, .ots2, .ots3, .ots4, .ots5
   {
     margin-left: 100px;
   }
 }
 
-@media (max-width: 375px)
-{
+@media (max-width: 375px) {
   .ots1, .ots2, .ots3, .ots4, .ots5
   {
     margin-left: 10px;
   }
 }
 
-@media (max-width: 280px)
-{
+@media (max-width: 280px) {
   .ots1, .ots2, .ots3, .ots4, .ots5
   {
     margin-left: 10px;
   }
 }
 
-h1
-{
+h1 {
   margin-top: 20px;
   font-size: 20px;
 }
 
-.button_team
-{
+.button_team {
   color: #292b2c;
   border-color: #292b2c;
   width: 20%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
-.team
-{
+.team {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.competencies
-{
-  padding: 150px 0;
+.competencies {
+  padding: 5px 0;
 }
 
 .competency-title
@@ -188,9 +180,8 @@ h1
   margin-bottom: 20px;
 }
 
-.competency-body
-{
+.competency-body {
   font-size: 15px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 </style>

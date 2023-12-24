@@ -95,12 +95,13 @@ img{
 }
 .competencies
 {
-  padding: 150px 0;
+  padding: 120px 0;
 }
 .logoForOpacity{
   opacity: 15%;
   width: 8%;
-  height: 8%
+  height: 8%;
+
 }
 .competency{
   top: 20px;
