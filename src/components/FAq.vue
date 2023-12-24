@@ -52,7 +52,7 @@ export default {
         </div>
       </div>
       <div class="flex-row">
-        <ol>
+        <ol class="faq-block">
           <FaqApp :header="header1" :text="text1" :isOpen="currentOpenBlock === 1" @toggle="setCurrentOpenBlock(1)"/>
           <FaqApp :header="header2" :text="text2" :isOpen="currentOpenBlock === 2" @toggle="setCurrentOpenBlock(2)"/>
           <FaqApp :header="header3" :text="text3" :isOpen="currentOpenBlock === 3" @toggle="setCurrentOpenBlock(3)"/>
@@ -73,6 +73,9 @@ export default {
 </template>
 
 <style scoped>
+
+
+
 .support-main-block {
   margin-bottom: 0;
   position: relative;

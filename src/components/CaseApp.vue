@@ -55,9 +55,10 @@
           <a href="#">
 
             <div class="cringe position-relative">
-              <div class="paket">
+
               <div class="blog-image-internalized">
                 <img src="@/assets/img/picture_3.jpg" class="img-fluid" alt="3" />
+                <div class="paket"></div>
               </div>
               <div class="header-date header-date-internalized px-3 py-4">
                 <h5>
@@ -69,7 +70,6 @@
                   <p>24.01.2020</p>
                 </div>
               </div>
-            </div>
             </div>
           </a>
         </article>
@@ -158,8 +158,10 @@
 .blog-guts a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
-
 }
+
+
+
 
 .blog-guts a:hover h5:hover {
   text-decoration: underline;
@@ -177,6 +179,7 @@
   height: 360px;
   object-fit: cover;
   border-radius: 6px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); /* Градиент */
 }
 
 .img-fluid img{

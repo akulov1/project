@@ -100,9 +100,9 @@
     </div>
     <div class = "text-center mt-2">
       <div class = "container">
-        <a role = "button" class = "btn btn-outline-light  btn-lg button_team">вся команда</a>
+        <a href = "#" role = "button" class = "btn btn-outline-light  btn-lg button_team">вся команда</a>
 
-        <!-- href = "#FooterApp" -->
+        <!--  -->
       </div>
     </div>
   </div>

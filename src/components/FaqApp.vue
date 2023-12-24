@@ -34,6 +34,7 @@ export default {
 </script>
 
 <template>
+  <div class="faq-block">
   <button v-on:click="switchBlock" v-bind:class="{ 'button': isClosed, 'button opened': !isClosed }">
     <div class="advantage_f">
       <li>
@@ -46,6 +47,7 @@ export default {
       </li>
     </div>
   </button>
+  </div>
 </template>
 
 <style scoped>
@@ -64,6 +66,8 @@ li {
   width: 100%;
   transition: all 0.4s ease;
 }
+
+
 
 .opened {
   border-color: #f14d34;
@@ -100,6 +104,7 @@ li {
 .text-opened {
   display: block;
   font-size: 1rem;
+
   color: #212529;
 }
 
