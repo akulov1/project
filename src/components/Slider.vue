@@ -2,52 +2,37 @@
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import Partner from "@/components/Partner.vue";
-import pic1 from "../assets/foto_for_slider/kitekat.jpg";
-import pic2 from "../assets/kitten/2.jpg";
-import pic3 from "../assets/kitten/3.jpg";
-import pic4 from "../assets/kitten/4.jpg";
-import pic5 from "../assets/kitten/5.jpg";
-import pic6 from "../assets/kitten/6.jpg";
-import pic7 from "../assets/kitten/1.jpg"
-import pic8 from "../assets/kitten/2.jpg"
-import pic9 from "../assets/kitten/3.jpg"
-import pic10 from "../assets/kitten/4.jpg"
-import pic11 from "../assets/kitten/5.jpg"
-import pic12 from "../assets/kitten/6.jpg"
-import pic13 from "../assets/kitten/1.jpg"
-import pic14 from "../assets/kitten/2.jpg"
-import pic15 from "../assets/kitten/3.jpg"
-import pic16 from "../assets/kitten/4.jpg"
-import pic17 from "../assets/kitten/5.jpg"
-import pic18 from "../assets/kitten/6.jpg"
-import pic19 from "../assets/kitten/1.jpg"
-import pic20 from "../assets/kitten/2.jpg"
+import pic1 from "../assets/img/rings/1.jpg";
+import pic2 from "../assets/img/rings/2.jpg";
+import pic3 from "../assets/img/rings/3.jpeg";
+import pic4 from "../assets/img/rings/4.jpg";
+import pic5 from "../assets/img/rings/5.png";
+import pic6 from "../assets/img/rings/6.png";
+import pic7 from "../assets/img/rings/7.png"
+import pic8 from "../assets/img/rings/8.jpg"
+import pic9 from "../assets/img/rings/9.jpg"
+import pic10 from "../assets/img/rings/10.png"
+import pic11 from "../assets/img/rings/11.png"
+import pic12 from "../assets/img/rings/youtube.svg"
+import pic13 from "../assets/foto_for_slider/kitekat.jpg"
+import pic14 from "../assets/foto_for_slider/Whiskas.png"
+import pic15 from "../assets/foto_for_slider/Friskies.svg.png"
+import pic16 from "../assets/foto_for_slider/whiskas.jpg"
+import pic17 from "../assets/img/rings/5.png"
+import pic18 from "../assets/img/rings/6.png"
+import pic19 from "../assets/img/rings/7.png"
+import pic20 from "../assets/img/rings/8.jpg"
 
 export default {
   name: "WorkWithUs",
   components: {Partner},
   data: () => {
     return {
-      pic1,
-      pic2,
-      pic3,
-      pic4,
-      pic5,
-      pic6,
-      pic7,
-      pic8,
-      pic9,
-      pic10,
-      pic11,
-      pic12,
-      pic13,
-      pic14,
-      pic15,
-      pic16,
-      pic17,
-      pic18,
-      pic19,
-      pic20
+      pic1, pic2, pic3, pic4,
+      pic5, pic6, pic7, pic8,
+      pic9, pic10, pic11, pic12,
+      pic13, pic14, pic15, pic16,
+      pic17, pic18, pic19, pic20
     }
   },
   mounted() {
