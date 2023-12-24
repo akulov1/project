@@ -6,7 +6,6 @@
   <section>
 <div class="competencies without-padding-bottom" >
   <div class="container">
-   <!-- ::before -->
     <div class="row">
       <div class = "col-md-10 time">
         <h1 class = "competency-title">Наши профессиональные разработчики выполняют быстро любые задачи</h1>
@@ -111,6 +110,7 @@ img{
 }
 .competency-title
 {
+  align-items: center;
   font-size: 42px;
   font-weight: 1000;
   margin-bottom: 20px;
