@@ -277,19 +277,6 @@
     background-size: contain
 }
 
-/* .tarrif-body-item.plus:before,
-.tariff-body-item.plus:before {
-    background: url(/themes/custom/bootstrap_dc/css/../images/plus.svg) no-repeat center;
-    background-size: contain;
-    height: 13px
-}
-
-.tarrif-body-item.minus:before,
-.tariff-body-item.minus:before {
-    background: url(/themes/custom/bootstrap_dc/css/../images/minus.svg) no-repeat center; 
-    background-size: contain
-} */
-
 .tariff-footer-btn {
     text-decoration: none;
     display: block;
@@ -328,8 +315,6 @@
     background: #f14d34
 }
 
-
-
 .tariffs-ps {
     text-align: center;
     line-height: 1.3;
@@ -339,8 +324,6 @@
     max-width: 100%;
     margin: 0 auto
 }
-
-
 
 .tariffs-link {
     display: block;

@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="advantage-body">
                                         Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете
-                                        через браузер. Более 122874 тикетов уже выполнено!
+                                        через браузер.
                                     </div>
                                     <div class="advantage-icon">
                                         <img alt="Диаграмма" src="../assets/img/support2.svg" class="img-responsive"
