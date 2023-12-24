@@ -68,9 +68,6 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   </div>
@@ -93,6 +90,7 @@ img{
   {
     position: relative;
     z-index: 15;
+
   }
 }
 .competencies
@@ -110,10 +108,10 @@ img{
 }
 .competency-title
 {
-  align-items: center;
   font-size: 42px;
   font-weight: 1000;
   margin-bottom: 20px;
+  width: 100%;
 }
 .competency-body
 {
