@@ -257,8 +257,7 @@
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 20px 40px rgba(5, 12, 51, .15);
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-right: -18px;
     height: 100%;
     position: relative;
     padding: 25px 25px 45px;

@@ -23,8 +23,7 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#FooterApp"
-                                            class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
+                                        <a href="#FooterApp" class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
                                     </div>
                                 </div>
                             </div>
@@ -48,8 +47,7 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#FooterApp"
-                                            class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
+                                        <a href="#FooterApp" class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
                                     </div>
                                 </div>
                             </div>
@@ -73,8 +71,7 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#FooterApp"
-                                            class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
+                                        <a href="#FooterApp" class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
                                     </div>
                                 </div>
                             </div>
