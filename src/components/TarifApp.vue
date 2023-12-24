@@ -338,5 +338,4 @@
 .tariffs-link:hover {
     text-decoration: none;
     color: #f14d32
-}
-</style>
+}</style>
