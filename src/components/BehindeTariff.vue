@@ -93,19 +93,25 @@ img{
 
   }
 }
+
+.competency-icon{
+  text-align: center!important;
+}
+
 .competencies
 {
   padding: 120px 0;
+  text-align: center!important;
 }
 .logoForOpacity{
   opacity: 15%;
-  width: 8%;
-  height: 8%;
+  width: 10%;
+  height: 10%;
 
 }
 .competency{
   top: 20px;
-
+  align-items: center;
 }
 .competency-title
 {
@@ -113,11 +119,19 @@ img{
   font-weight: 1000;
   margin-bottom: 20px;
   width: 100%;
+  text-align: center!important;
 }
+.img-responsive{
+  align-items: center!important;
+  margin: auto;
+}
+
+
 .competency-body
 {
   font-size: 15px;
   margin-top: 20px;
+  text-align: center!important;
 }
 .time
 {
