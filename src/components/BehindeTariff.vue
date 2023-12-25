@@ -143,6 +143,10 @@ img{
   align-items: center!important;
   margin: auto;
 }
+.competency-time{
+  font-weight: bold;
+  font-size: 24px;
+}
 
 
 .competency-body
