@@ -17,7 +17,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                  <!-- ::before -->
-                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity mt-3"/>
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity1 mt-3"/>
                   <img src="../assets/img/competency-20.svg" class="img-responsive">
                 </div>
               </div>
@@ -36,7 +36,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                   <!-- ::before -->
-                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity mt-3"/>
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity2 mt-3"/>
                   <img src="../assets/img/competency-21.svg" class="img-responsive">
                 </div>
               </div>
@@ -55,7 +55,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                   <!-- ::before -->
-                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity mt-3"/>
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity3 mt-3"/>
                   <img src="../assets/img/competency-22.svg" class="img-responsive">
                 </div>
               </div>
@@ -95,20 +95,38 @@ img{
 }
 
 .competency-icon{
-  text-align: center!important;
+
 }
 
 .competencies
 {
   padding: 120px 0;
-  text-align: center!important;
+  align-items: center;
 }
-.logoForOpacity{
+.logoForOpacity1{
   opacity: 15%;
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
+  margin: auto;
+  left: 500px;
+}
+.logoForOpacity2{
+  opacity: 15%;
+  width: 8%;
+  height: 8%;
+  margin: auto;
+  left: 940px;
+}
+
+.logoForOpacity3{
+  opacity: 15%;
+  width: 8%;
+  height: 8%;
+  margin: auto;
+  left: 1370px;
 
 }
+
 .competency{
   top: 20px;
   align-items: center;
