@@ -4,6 +4,7 @@
     <InformApp />
     <PodderzhkaAndExpertiseApp />
     <TarifApp />
+    <ModalApp/>
     <BehindeTariff />
     <TeamApp />
     <CaseApp />
@@ -26,12 +27,14 @@ import CaseApp from "@/components/CaseApp.vue";
 import FooterApp from "@/components/FooterApp.vue";
 import FAq from "@/components/FAq.vue";
 import AppReview from "@/components/AppReview.vue";
+import ModalApp from "@/components/ModalApp.vue";
 
 
 
 
 export default {
   components: {
+    ModalApp,
     FAq,
     BehindeTariff,
     AppHeader,

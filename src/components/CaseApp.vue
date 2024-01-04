@@ -125,7 +125,6 @@
 
 <style>
 
-/* cases*/
 .title_c{
   color: #050c33;
   font-weight: 700;

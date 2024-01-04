@@ -165,7 +165,7 @@ export default
 
 .competency-title
 {
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 1000;
   margin-bottom: 20px;
 }

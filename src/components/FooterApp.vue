@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="col-11 col-md-5 mx-auto">
-            <AppForm/><!--Сделать анимацию загрузки, пока форма отправляется на сервер-->
+            <AppForm/>
           </div>
 
           <div class="col-12 footer-social">

@@ -23,7 +23,12 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#footerRegion" class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
+                                      <button
+                                          type="button"
+                                          class="contact-form tariff-footer-btn"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#exampleModal"
+                                      >Свяжитесь с нами!</button>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +52,12 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#footerRegion" class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
+                                      <button
+                                          type="button"
+                                          class="contact-form tariff-footer-btn"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#exampleModal"
+                                      >Свяжитесь с нами!</button>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +81,12 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <a href="#footerRegion" class="contact-form tariff-footer-btn">Свяжитесь с нами!</a>
+                                        <button
+                                            type="button"
+                                            class="contact-form tariff-footer-btn"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                        >Свяжитесь с нами!</button>
                                     </div>
                                 </div>
                             </div>

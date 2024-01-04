@@ -17,7 +17,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                  <!-- ::before -->
-                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity1 mt-3"/>
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "logoForOpacity1 mt-3"/>
                   <img src="../assets/img/competency-20.svg" class="img-responsive">
                 </div>
               </div>
@@ -36,7 +36,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                   <!-- ::before -->
-                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity2 mt-3"/>
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "logoForOpacity2 mt-3"/>
                   <img src="../assets/img/competency-21.svg" class="img-responsive">
                 </div>
               </div>
@@ -55,7 +55,7 @@
               <div class="competency-header">
                 <div class="competency-icon">
                   <!-- ::before -->
-                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity3 mt-3"/>
+                  <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "logoForOpacity3 mt-3"/>
                   <img src="../assets/img/competency-22.svg" class="img-responsive">
                 </div>
               </div>
@@ -91,6 +91,9 @@ img{
     position: relative;
     z-index: 15;
 
+  }
+  .competency-title{
+    font-size: 42px;
   }
 }
 
@@ -133,7 +136,7 @@ img{
 }
 .competency-title
 {
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 1000;
   margin-bottom: 20px;
   width: 100%;
