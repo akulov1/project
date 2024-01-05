@@ -8,13 +8,26 @@
   </div>
 </template>
 
-<script >
+<script>
 import AppForm from "@/components/AppForm.vue";
 
 export default {
-  components: {AppForm}
+  components: { AppForm },
+  mounted() {
+    window.addEventListener("popstate", this.handlePopstate);
+  },
+  unmounted() {
+    window.removeEventListener("popstate", this.handlePopstate);
+  },
+  methods: {
+    handlePopstate() {
+      this.closeModal();
+    },
+    closeModal() {
 
-}
+    }
+  },
+};
 </script>
 
 <style>

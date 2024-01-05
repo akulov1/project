@@ -39,7 +39,7 @@
           </a>
         </div>
         <div class="col-12 mt-3">
-          <button :disabled="isLoading" class="btn btn-footer" type="submit" id="Button">
+          <button :disabled="isLoading" class="btn btn-footer" type="submit" @click="openForm" id="Button">
             <span v-if="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             <span v-else>Свяжитесь с нами!</span>
           </button>
@@ -47,10 +47,14 @@
       </div>
     </form>
   </transition>
-  <div v-if="errorMessage" class="error-message">{{ errorMessage }}</div>
-  <div v-if="isFormSubmitted" class="col-12 mt-3 text-success">
-    Форма успешно отправлена!
-  </div>
+  <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
+    <div v-if="isFormSubmitted" class="col-12 mt-3 text-success">
+      Форма успешно отправлена!
+    </div>
+  </transition>
+  <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
+    <div v-if="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </transition>
 </template>
 
 <script >
@@ -65,26 +69,13 @@ export default {
       errorMessage: '',
     };
   },
-  mounted() {
-    window.addEventListener('popstate', this.handlePopstate);
-  },
-  beforeUnmount() {
-    window.removeEventListener('popstate', this.handlePopstate);
-  },
-  watch: {
-    showForm(newVal) {
-      if (newVal) {
-        const newUrl = `${window.location.pathname}#form`;
-        history.pushState({ path: newUrl }, '', newUrl);
-      }
-    },
-  },
   methods: {
+
     async submitForm() {
       try {
 
         const newUrl = `${window.location.pathname}#form`;
-        history.pushState({path: newUrl}, '', newUrl);
+        history.pushState({ path: newUrl }, '', newUrl);
         this.isLoading = true;
 
         const formData = new FormData(document.getElementById('Form'));
@@ -92,7 +83,6 @@ export default {
 
         this.isFormSubmitted = true;
         this.isLoading = false;
-        this.showForm = false;
 
       } catch (error) {
         console.error('Ошибка:', error);
@@ -134,14 +124,7 @@ export default {
           done();
         }
       }
-
       animate();
-    },
-    handlePopstate() {
-      // Handle the "popstate" event, close the form if it is open
-      if (this.showForm) {
-        this.showForm = false;
-      }
     },
   },
 

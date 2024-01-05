@@ -2,7 +2,7 @@
   <header class="mob-nav">
     <div class="container header">
       <div class="header-logo">
-        <img src="../assets/img/drupal-coder.svg" />
+        <img src="../assets/img/drupal-coder.svg"/>
       </div>
 
       <!--HeaderNav --->
@@ -24,35 +24,28 @@
                 >
                   Администрирование
                 </a>
-
                 <ul
                     class="dropdown-menu mt-2"
-                    aria-labelledby="dropdownMenuLink"
-                >
+                    aria-labelledby="dropdownMenuLink">
                   <li>
                     <a class="dropdown-item p-2 text-uppercase" href="#"
-                    >Миграция</a
-                    >
+                    >Миграция</a>
                   </li>
                   <li>
                     <a class="dropdown-item p-2 text-uppercase" href="#"
-                    >Бэкапы</a
-                    >
+                    >Бэкапы</a>
                   </li>
                   <li>
                     <a class="dropdown-item p-2 text-uppercase" href="#"
-                    >Аудит безопастности</a
-                    >
+                    >Аудит безопастности</a>
                   </li>
                   <li>
                     <a class="dropdown-item p-2 text-uppercase" href="#"
-                    >Оптимизация скорости</a
-                    >
+                    >Оптимизация скорости</a>
                   </li>
                   <li>
                     <a class="dropdown-item p-2 text-uppercase" href="#"
-                    >Переезд на https</a
-                    >
+                    >Переезд на https</a>
                   </li>
                 </ul>
               </div>
@@ -108,8 +101,7 @@
             class="nav-btn dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-        >
-          <img src="../assets/img/mobile-menu.svg" alt="" />
+        ><img src="../assets/img/mobile-menu.svg" alt=""/>
         </a>
         <ul class="dropdown-menu animate">
           <li><a class="dropdown-item active" href="#">Поддержка Drupal</a></li>
@@ -121,18 +113,19 @@
                 id="Dropdown4"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-            >Администрирование</a><!--Добавить стрелочку вниз, пофиксить данное меню-->
+            >Администрирование <span> <img src="../assets/img/caret.svg" alt=""/></span></a>
+            <!--Добавить стрелочку вниз, пофиксить данное меню-->
             <ul aria-labelledby="Dropdown4" class="dropdown-menu show">
-              <li><a class="dropdown-item" href="#">Миграция</a></li>
-              <li><a class="dropdown-item" href="#">Бэкапы</a></li>
+              <li><a class="dropdown-item px-5" href="#">Миграция</a></li>
+              <li><a class="dropdown-item px-5" href="#">Бэкапы</a></li>
               <li>
-                <a class="dropdown-item" href="#">Аудит Безопасности</a>
+                <a class="dropdown-item px-5" href="#">Аудит Безопасности</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Оптимизация скорости</a>
+                <a class="dropdown-item px-5" href="#">Оптимизация скорости</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Переезд на Https</a>
+                <a class="dropdown-item px-5" href="#">Переезд на Https</a>
               </li>
             </ul>
           </li>
@@ -146,15 +139,15 @@
                 id="Dropdown3"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-            >О нас</a>
+            >О нас <span> <img src="../assets/img/caret.svg" alt=""/></span></a>
             <ul aria-labelledby="Dropdown3" class="dropdown-menu show">
-              <li><a class="dropdown-item" href="#">Наша команда</a></li>
-              <li><a class="dropdown-item" href="#">Отдых</a></li>
+              <li><a class="dropdown-item px-5" href="#">Наша команда</a></li>
+              <li><a class="dropdown-item px-5" href="#">Отдых</a></li>
               <li>
-                <a class="dropdown-item" href="#">Достижения</a>
+                <a class="dropdown-item px-5" href="#">Достижения</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">История</a>
+                <a class="dropdown-item px-5" href="#">История</a>
               </li>
             </ul>
           </li>
@@ -168,15 +161,15 @@
   <div class="main-info">
     <div class="main-info-video">
       <video autoplay="autoplay" muted preload="auto" loop playsinline>
-        <source src="../assets/video/header_video.mp4" type="video/mp4" />
+        <source src="../assets/video/header_video.mp4" type="video/mp4"/>
       </video>
     </div>
     <div class="container d-flex justify-content-between">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="main-info-title">Поддержка <br />сайтов на Drupal</h1>
+          <h1 class="main-info-title">Поддержка <br/>сайтов на Drupal</h1>
           <div class="main-info-desc">
-            Сопровождение и поддержка сайтов<br />
+            Сопровождение и поддержка сайтов<br/>
             на CMS Drupal любых версий и запущенности
           </div>
           <div class="main-info-btn">
@@ -189,7 +182,7 @@
               <div class="main-list-item-border">
                 <div class="main-list-item-title">
                   #1
-                  <img src="../assets/img/cup.png" />
+                  <img src="../assets/img/cup.png"/>
                 </div>
                 <div class="main-list-item-desc">
                   Drupal-разработчик в России по версии Рейтинга Рунета
@@ -250,23 +243,27 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 .container {
   max-width: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .container.header {
-  height: 50px;
+  height: 40px;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
+
 /* Header */
 header {
   width: 96%;
@@ -276,31 +273,38 @@ header {
 
   z-index: 100;
 }
+
 .header-navigation {
   display: none;
 }
+
 .nav-btn {
   display: block;
   top: 0px;
   position: relative;
   z-index: 3;
 }
+
 .nav-btn img {
   width: 27px;
   filter: invert(0.5);
 }
+
 .header-logo img {
   width: 137px;
   height: 19px;
   float: left;
 }
+
 nav {
   float: left;
   margin-left: 100px;
 }
+
 .header-nav {
   padding-top: 2px;
 }
+
 .header-nav-menu {
   display: none;
   flex-wrap: wrap;
@@ -310,6 +314,7 @@ nav {
   color: black;
   text-transform: uppercase;
 }
+
 .header-nav-menu-item {
   color: #fff;
   cursor: pointer;
@@ -319,22 +324,24 @@ nav {
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.3s ease-in-out;
 }
+
 .header-nav-menu-item a {
   text-decoration: none;
   color: inherit;
 }
+
 .header-nav-menu-item:hover {
   border-bottom: 3px solid #f14d34;
   opacity: 1;
 }
+
 .header-nav-menu-item.active {
   opacity: 0.8;
   color: #fff;
   border-bottom: 3px solid #f14d34;
 }
+
 .header-navigation .dropdown-menu {
-  margin-left: -2px;
-  margin-top: -2px;
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -343,36 +350,43 @@ nav {
   opacity: 1;
   background-color: #f14d34;
   border-radius: 0;
-
 }
+
 .btn-group .dropdown-menu {
   position: relative;
   padding: 0rem;
-  top: 0;
-  bottom: -10px;
+  right: 10px;
   border: 0;
-
+  transform: none;
+  width: 100%;
 }
+
 .btn-group .dropdown-item.active {
   color: #f14e3b;
+  right: 10px;
   background-color: black;
 }
+
 .btn-group .dropdown-item:hover {
   color: #f14e3b;
   background-color: black;
 }
+
 .header-navigation .dropdown-item:hover {
   background: #d13018;
   color: #fff;
 
 }
+
 .btn-group.dropup {
   position: static;
 
 }
+
 .invisible {
   opacity: 0;
 }
+
 .animate {
   animation-duration: 0.3s;
   -webkit-animation-duration: 0.3s;
@@ -382,14 +396,19 @@ nav {
 
 .btn-group .dropdown-menu.show {
   width: 100%;
-  bottom: 40px;
+  position: relative;
+  left: 0px;
+  transform: none;
 }
+
 .btn-group.dropup .dropdown-toggle::after {
   display: none;
 }
-.btn-group .dropdown-menu .dropdown-menu .dropdown-item {
-  padding-left: 40px;
+
+.btn-group .dropdown-item {
+  padding-left: 10px;
 }
+
 .btn-group .dropdown-item {
   font-size: 12px;
   background: black;
@@ -399,12 +418,17 @@ nav {
   text-transform: uppercase;
   color: white;
   transition: color 0.3s ease;
-
+  right: 10px;
+  transform: none;
+  position: relative;
+  width: 100%;
 }
+
 .btn-group .dropdown-item span img {
   width: 9px;
   filter: invert(0.85);
 }
+
 /* Main Info */
 
 .main-info {
@@ -412,11 +436,13 @@ nav {
   padding: 40px 0 60px;
   overflow: hidden;
 }
+
 .main-info .container {
   z-index: 10;
   position: relative;
   color: white;
 }
+
 .main-info-video video {
   position: absolute;
   top: 0;
@@ -429,27 +455,32 @@ nav {
   z-index: 2;
   filter: blur(3px);
 }
+
 .main-info-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .main-info-desc {
   font-size: 14px;
   font-weight: 500;
   opacity: 0.8;
   text-align: center;
 }
+
 .main-info-btn {
   text-align: center;
   margin-top: 55px;
   margin-bottom: 55px;
 }
+
 .main-info img {
   vertical-align: baseline;
   margin-left: -10px;
 }
+
 .main-info:before {
   content: '';
   display: block;
@@ -465,6 +496,7 @@ nav {
   background-position: top center;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .main-btn {
   display: inline-block;
   border: 2px solid #f14d34;
@@ -478,6 +510,7 @@ nav {
   font-size: 12px;
   transition: all 0.5s ease;
 }
+
 .main-btn:hover {
   background: #f14d34;
   color: black;
@@ -493,6 +526,7 @@ nav {
   padding-bottom: 10px;
   height: 100%;
 }
+
 .main-list-item-desc {
   margin-top: 4px;
   font-weight: 500;
@@ -500,6 +534,7 @@ nav {
   line-height: 14.63px;
   opacity: 0.7;
 }
+
 .main-list-item-title {
   display: flex;
   align-items: baseline;
@@ -509,15 +544,18 @@ nav {
   line-height: 1;
   margin-bottom: 5px;
 }
+
 .main-list-item:first-child .main-list-item-title {
   font-size: 48px;
   margin-top: -42px;
 }
+
 .main-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
 }
+
 .main-list-item {
   margin-bottom: 32px;
 }
@@ -527,12 +565,14 @@ nav {
     max-width: 1170px;
     padding: 0;
   }
+
   .container.header {
     display: block;
     justify-content: unset;
     align-items: unset;
     height: unset;
   }
+
   header {
     position: absolute;
     top: 0;
@@ -544,45 +584,57 @@ nav {
     background: transparent;
     z-index: 15;
   }
+
   .btn-group {
     display: none;
   }
+
   .header-navigation {
     display: block;
   }
+
   .header-nav-menu {
     display: flex;
   }
+
   .header-logo {
     display: block;
   }
+
   .main-info {
     padding: 130px 0 60px;
   }
+
   .main-info-title {
     font-size: 52px;
     text-align: unset;
     line-height: 60px;
   }
+
   .main-info-desc {
     font-size: 18px;
     text-align: unset;
   }
+
   .main-info-btn {
     text-align: unset;
     margin-bottom: 0;
   }
+
   .main-info:before {
     background-size: unset;
     background-position: unset;
   }
+
   .main-list-item {
     margin-bottom: 96px;
   }
+
   .main-list-item-title {
     display: block;
     align-items: unset;
   }
+
   .main-utilities {
     padding-top: 100px;
     padding-bottom: 100px;
