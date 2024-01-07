@@ -28,6 +28,7 @@
                                           class="contact-form tariff-footer-btn"
                                           data-bs-toggle="modal"
                                           data-bs-target="#exampleModal"
+                                          @click="openModal"
                                       >Свяжитесь с нами!</button>
                                     </div>
                                 </div>
@@ -111,7 +112,13 @@
 
 
 <script>
-
+export default {
+  methods:{
+    openModal(){
+      this.$router.push({name:'modal'})
+    }
+  }
+}
 </script>
 
 

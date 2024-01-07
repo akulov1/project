@@ -69,13 +69,20 @@ export default {
       errorMessage: '',
     };
   },
-  methods: {
+  saveFormDataToLocalStorage(formData) {
+    localStorage.setItem('formData', JSON.stringify(formData));
+  },
 
+  loadFormDataFromLocalStorage() {
+    const savedFormData = localStorage.getItem('formData');
+    if (savedFormData) {
+      return JSON.parse(savedFormData);
+    }
+    return null;
+  },
+  methods: {
     async submitForm() {
       try {
-
-        const newUrl = `${window.location.pathname}#form`;
-        history.pushState({ path: newUrl }, '', newUrl);
         this.isLoading = true;
 
         const formData = new FormData(document.getElementById('Form'));
@@ -84,10 +91,16 @@ export default {
         this.isFormSubmitted = true;
         this.isLoading = false;
 
+        localStorage.removeItem('formData');
+
       } catch (error) {
         console.error('Ошибка:', error);
         this.isLoading = false;
-        this.errorMessage = 'Ошибка при отправке формы. Пожалуйста, попробуйте еще раз.';
+        this.errorMessage =
+            'Ошибка при отправке формы. Пожалуйста, попробуйте еще раз.';
+
+        const formData = new FormData(document.getElementById('Form'));
+        this.saveFormDataToLocalStorage(Object.fromEntries(formData));
       }
     },
     beforeEnter(el) {
