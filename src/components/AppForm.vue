@@ -1,6 +1,6 @@
 <template>
   <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-    <form е  id="Form">
+    <form v-if="showForm" @submit.prevent="submitForm" id="Form">
       <div class="form-row">
         <div class="col-12">
           <input class="form-control opacity-75 p-4 form-control-md info"
@@ -103,11 +103,9 @@ export default {
         this.saveFormDataToLocalStorage(Object.fromEntries(formData));
       }
     },
-    
     beforeEnter(el) {
       el.style.opacity = 0;
     },
-    
     enter(el, done) {
       let opacity = 0;
       const duration = 500;
@@ -125,7 +123,6 @@ export default {
 
       animate();
     },
-    
     leave(el, done) {
       let opacity = 1;
       const duration = 500; // Длительность анимации в миллисекундах
