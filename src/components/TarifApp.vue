@@ -28,7 +28,7 @@
                                           class="contact-form tariff-footer-btn"
                                           data-bs-toggle="modal"
                                           data-bs-target="#exampleModal"
-                                          @click="openModal"
+                                          @click="changeURL"
                                       >Свяжитесь с нами!</button>
 
                                     </div>
