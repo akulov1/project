@@ -1,5 +1,5 @@
 <template>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" @shown="onModalShown">
     <div class="modal-dialog modal__width">
       <div class="modal-content modal__content">
         <AppForm></AppForm>
@@ -13,20 +13,6 @@ import AppForm from "@/components/AppForm.vue";
 
 export default {
   components: { AppForm },
-  mounted() {
-    window.addEventListener("popstate", this.handlePopstate);
-  },
-  unmounted() {
-    window.removeEventListener("popstate", this.handlePopstate);
-  },
-  methods: {
-    handlePopstate() {
-      this.closeModal();
-    },
-    closeModal() {
-
-    }
-  },
 };
 </script>
 

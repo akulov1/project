@@ -1,6 +1,6 @@
 <template>
   <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-    <form v-if="showForm" @submit.prevent="submitForm" id="Form">
+    <form е  id="Form">
       <div class="form-row">
         <div class="col-12">
           <input class="form-control opacity-75 p-4 form-control-md info"
@@ -69,13 +69,20 @@ export default {
       errorMessage: '',
     };
   },
-  methods: {
+  saveFormDataToLocalStorage(formData) {
+    localStorage.setItem('formData', JSON.stringify(formData));
+  },
 
+  loadFormDataFromLocalStorage() {
+    const savedFormData = localStorage.getItem('formData');
+    if (savedFormData) {
+      return JSON.parse(savedFormData);
+    }
+    return null;
+  },
+  methods: {
     async submitForm() {
       try {
-
-        const newUrl = `${window.location.pathname}#form`;
-        history.pushState({ path: newUrl }, '', newUrl);
         this.isLoading = true;
 
         const formData = new FormData(document.getElementById('Form'));
@@ -84,15 +91,23 @@ export default {
         this.isFormSubmitted = true;
         this.isLoading = false;
 
+        localStorage.removeItem('formData');
+
       } catch (error) {
         console.error('Ошибка:', error);
         this.isLoading = false;
-        this.errorMessage = 'Ошибка при отправке формы. Пожалуйста, попробуйте еще раз.';
+        this.errorMessage =
+            'Ошибка при отправке формы. Пожалуйста, попробуйте еще раз.';
+
+        const formData = new FormData(document.getElementById('Form'));
+        this.saveFormDataToLocalStorage(Object.fromEntries(formData));
       }
     },
+    
     beforeEnter(el) {
       el.style.opacity = 0;
     },
+    
     enter(el, done) {
       let opacity = 0;
       const duration = 500;
@@ -110,6 +125,7 @@ export default {
 
       animate();
     },
+    
     leave(el, done) {
       let opacity = 1;
       const duration = 500; // Длительность анимации в миллисекундах

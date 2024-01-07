@@ -114,7 +114,6 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
             >Администрирование <span> <img src="../assets/img/caret.svg" alt=""/></span></a>
-            <!--Добавить стрелочку вниз, пофиксить данное меню-->
             <ul aria-labelledby="Dropdown4" class="dropdown-menu show">
               <li><a class="dropdown-item px-5" href="#">Миграция</a></li>
               <li><a class="dropdown-item px-5" href="#">Бэкапы</a></li>

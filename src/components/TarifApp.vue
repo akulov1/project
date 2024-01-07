@@ -28,7 +28,10 @@
                                           class="contact-form tariff-footer-btn"
                                           data-bs-toggle="modal"
                                           data-bs-target="#exampleModal"
-                                      >Свяжитесь с нами!</button>
+                                          @click="changeURL"
+                                      >
+                                        Свяжитесь с нами!
+                                      </button>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +60,10 @@
                                           class="contact-form tariff-footer-btn"
                                           data-bs-toggle="modal"
                                           data-bs-target="#exampleModal"
-                                      >Свяжитесь с нами!</button>
+                                          @click="changeURL"
+                                      >
+                                        Свяжитесь с нами!
+                                      </button>
                                     </div>
                                 </div>
                             </div>
@@ -81,12 +87,15 @@
                                         <div class="tarrif-body-item">Консультации и работы по SEO</div>
                                     </div>
                                     <div class="tariff-footer">
-                                        <button
-                                            type="button"
-                                            class="contact-form tariff-footer-btn"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                        >Свяжитесь с нами!</button>
+                                      <button
+                                          type="button"
+                                          class="contact-form tariff-footer-btn"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#exampleModal"
+                                          @click="changeURL"
+                                      >
+                                        Свяжитесь с нами!
+                                      </button>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +120,13 @@
 
 
 <script>
-
+export default {
+  methods: {
+    changeURL() {
+      this.$router.push({name:'modal'});
+    }
+  }
+};
 </script>
 
 
