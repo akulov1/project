@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Modal from './components/ModalApp.vue'
+import ModalApp from "./components/ModalApp.vue";
 
 const routes = [
     {
-        path: `${window.location.pathname}#ModalApp`,
+        path: `${window.location.pathname}#modal`,
         name: 'modal',
-        component: Modal,
+        component: ModalApp,
     },
 
 ];
