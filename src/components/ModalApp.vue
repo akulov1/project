@@ -1,5 +1,5 @@
 <template>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" @shown="onModalShown">
     <div class="modal-dialog modal__width">
       <div class="modal-content modal__content">
         <AppForm></AppForm>
@@ -26,7 +26,8 @@ export default {
 }
 @media (max-width: 440px) {
   .modal__width {
-    width: 390px !important;
+    max-width: 100%;
+    width: 380px !important;
   }
 }
 </style>

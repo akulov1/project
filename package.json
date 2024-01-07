@@ -11,15 +11,17 @@
   },
   "dependencies": {
     "axios": "^1.6.4",
-    "bootstrap": "^5.2.3",
+    "bootstrap": "^5.3.2",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "cross-env": "^7.0.3",
+    "jquerry": "^0.0.1-security",
     "jquery": "^3.7.1",
     "swiper": "^11.0.5",
     "vue": "^3.2.13",
     "vue-router": "^4.2.5",
-    "vue-slick": "^1.2.0"
+    "vue-slick": "^1.2.0",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

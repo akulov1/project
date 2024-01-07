@@ -7,6 +7,7 @@ const routes = [
         name: 'modal',
         component: ModalApp,
     },
+
 ];
 
 const router = createRouter({
