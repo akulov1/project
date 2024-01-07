@@ -26,7 +26,8 @@ export default {
 }
 @media (max-width: 440px) {
   .modal__width {
-    width: 390px !important;
+    max-width: 100%;
+    width: 380px !important;
   }
 }
 </style>
