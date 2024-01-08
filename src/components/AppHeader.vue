@@ -265,11 +265,10 @@ a {
 
 /* Header */
 header {
-  width: 96%;
+  width: 100%;
   background: black;
   position: fixed;
   bottom: -3px;
-
   z-index: 100;
 }
 
@@ -362,8 +361,8 @@ nav {
 
 .btn-group .dropdown-item.active {
   color: #f14e3b;
-  right: 10px;
   background-color: black;
+  width: 100%;
 }
 
 .btn-group .dropdown-item:hover {
@@ -417,7 +416,6 @@ nav {
   text-transform: uppercase;
   color: white;
   transition: color 0.3s ease;
-  right: 10px;
   transform: none;
   position: relative;
   width: 100%;
@@ -499,7 +497,6 @@ nav {
 .main-btn {
   display: inline-block;
   border: 2px solid #f14d34;
-  box-sizing: border-box;
   border-radius: 5px;
   padding: 19px 0;
   width: 220px;
