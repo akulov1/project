@@ -10,7 +10,7 @@
         <nav>
           <ul class="header-nav-menu d-flex justify-content-between">
             <li class="header-nav-menu-item">
-              <a href="#">Поддержка Drupal</a>
+              <a href="#block-podderzhkasaytovpodderzhkaotdrupalcoder">Поддержка Drupal</a>
             </li>
             <li>
               <div class="dropdown">
@@ -74,7 +74,7 @@
                     aria-labelledby="dropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item p-2" href="#">Наша команда</a>
+                    <a class="dropdown-item p-2" href="#team">Наша команда</a>
                   </li>
                   <li><a class="dropdown-item p-2" href="#">Отдых</a></li>
                   <li>
@@ -87,8 +87,8 @@
               </div>
             </li>
 
-            <li class="header-nav-menu-item"><a href="#">Проекты</a></li>
-            <li class="header-nav-menu-item"><a href="#">Контакты</a></li>
+            <li class="header-nav-menu-item"><a href="#blogger">Проекты</a></li>
+            <li class="header-nav-menu-item"><a href="#footerRegion">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -104,7 +104,7 @@
         ><img src="../assets/img/mobile-menu.svg" alt=""/>
         </a>
         <ul class="dropdown-menu animate">
-          <li><a class="dropdown-item active" href="#">Поддержка Drupal</a></li>
+          <li><a class="dropdown-item active" href="#block-podderzhkasaytovpodderzhkaotdrupalcoder">Поддержка Drupal</a></li>
           <li>
             <a
                 href="#"
@@ -140,7 +140,7 @@
                 aria-expanded="false"
             >О нас <span> <img src="../assets/img/caret.svg" alt=""/></span></a>
             <ul aria-labelledby="Dropdown3" class="dropdown-menu show">
-              <li><a class="dropdown-item px-5" href="#">Наша команда</a></li>
+              <li><a class="dropdown-item px-5" href="#team">Наша команда</a></li>
               <li><a class="dropdown-item px-5" href="#">Отдых</a></li>
               <li>
                 <a class="dropdown-item px-5" href="#">Достижения</a>
@@ -150,8 +150,8 @@
               </li>
             </ul>
           </li>
-          <li><a class="dropdown-item" href="#CaseApp">Проекты</a></li>
-          <li><a class="dropdown-item" href="#FooterApp">Контакты</a></li>
+          <li><a class="dropdown-item" href="#blogger">Проекты</a></li>
+          <li><a class="dropdown-item" href="#footerRegion">Контакты</a></li>
         </ul>
       </div>
       <!--MobileNav --->

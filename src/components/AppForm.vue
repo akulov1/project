@@ -51,13 +51,11 @@
     <div v-if="isFormSubmitted" class="col-12 mt-3 text-success">
       Форма успешно отправлена!
     </div>
-  </transition>
-  <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-    <div v-if="errorMessage" class="error-message">{{ errorMessage }}</div>
+    <div v-else-if="errorMessage" class="error-message">{{ errorMessage }}</div>
   </transition>
 </template>
 
-<script >
+<script>
 import axios from 'axios';
 
 export default {
@@ -69,18 +67,19 @@ export default {
       errorMessage: '',
     };
   },
-  saveFormDataToLocalStorage(formData) {
-    localStorage.setItem('formData', JSON.stringify(formData));
-  },
-
-  loadFormDataFromLocalStorage() {
-    const savedFormData = localStorage.getItem('formData');
-    if (savedFormData) {
-      return JSON.parse(savedFormData);
-    }
-    return null;
-  },
   methods: {
+    saveFormDataToLocalStorage(formData) {
+      localStorage.setItem('formData', JSON.stringify(formData));
+    },
+
+    loadFormDataFromLocalStorage() {
+      const savedFormData = localStorage.getItem('formData');
+      if (savedFormData) {
+        return JSON.parse(savedFormData);
+      }
+      return null;
+    },
+
     async submitForm() {
       try {
         this.isLoading = true;
@@ -92,7 +91,6 @@ export default {
         this.isLoading = false;
 
         localStorage.removeItem('formData');
-
       } catch (error) {
         console.error('Ошибка:', error);
         this.isLoading = false;
@@ -103,6 +101,7 @@ export default {
         this.saveFormDataToLocalStorage(Object.fromEntries(formData));
       }
     },
+
     beforeEnter(el) {
       el.style.opacity = 0;
     },
@@ -125,10 +124,10 @@ export default {
     },
     leave(el, done) {
       let opacity = 1;
-      const duration = 500; // Длительность анимации в миллисекундах
+      const duration = 500;
 
       function animate() {
-        opacity -= 1 / (duration / 16); // Изменение прозрачности
+        opacity -= 1 / (duration / 16);
         el.style.opacity = opacity;
 
         if (opacity > 0) {
@@ -140,7 +139,6 @@ export default {
       animate();
     },
   },
-
 };
 </script>
 

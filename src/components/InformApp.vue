@@ -1,5 +1,5 @@
 <template>
-  <div class = "inform-region container-fluid">
+  <div class = "inform-region container-fluid" id="Inform">
     <div class = "competencies">
       <div class = "container">
         <div class = "row">
