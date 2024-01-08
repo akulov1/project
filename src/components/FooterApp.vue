@@ -258,6 +258,11 @@ export default {
   color:#fff;
 }
 
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .social-desc {
   font-weight: normal;
   font-size: 14px;
