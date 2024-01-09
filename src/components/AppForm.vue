@@ -43,7 +43,7 @@
         <div class="col-12">
           <button :disabled="isLoading || !isFormValid" class="btn btn-footer" type="submit" id="Button">
             <span v-if="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            <span v-else-if="!isFormValid">Форма заполнена не полностью!</span>
+            <span v-else-if="!isFormValid">Форма не заполнена!</span>
             <span v-else>Свяжитесь с нами!</span>
           </button>
         </div>
@@ -92,7 +92,7 @@ export default {
         return /^[0-9+]+$/.test(value);
       } else if (fieldName === 'userEmail') {
         //валидация адреса электронной почты
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+        return /^[^\s@]+@[^\s@.]+\.[^\s@.]+$/.test(value);
       }
 
       return value !== '';
