@@ -1,29 +1,31 @@
 <template>
   <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-    <form v-if="showForm" @submit.prevent="submitForm" id="Form">
+    <form @submit.prevent="submitForm" id="Form">
       <div class="form-row">
         <div class="col-12">
-          <input class="form-control opacity-75 p-4 form-control-md info"
+          <input v-model="formData.lastName" class="form-control opacity-75 p-4 form-control-md info"
                  type="text"
                  name="lastName"
                  placeholder="Ваше имя" autocomplete required>
+          <div v-if="!isFieldValid('lastName')" class="error-message">Пожалуйста, введите ваше имя.</div>
         </div>
         <div class="col-12">
-          <input class="form-control opacity-75 p-4 form-control-md info"
+          <input v-model="formData.userPhone" class="form-control opacity-75 p-4 form-control-md info"
                  type="text"
                  name="userPhone"
                  placeholder="Телефон"
                  autocomplete
                  pattern="[0-9+]+"
                  required>
+          <div v-if="!isFieldValid('userPhone')" class="error-message">Введите правильный номер телефона.</div>
         </div>
         <div class="col-12">
-          <input class="form-control opacity-75 p-4 form-control-md info"
+          <input v-model="formData.userEmail" class="form-control opacity-75 p-4 form-control-md info"
                  type="email"
                  name="userEmail"
                  placeholder="E-mail"
-                 required
-                 autocomplete>
+                 required>
+          <div v-if="!isFieldValid('userEmail')" class="error-message">Введите правильный адрес электронной почты.</div>
         </div>
         <div class="col-12">
               <textarea class="form-control opacity-75 p-4 form-control-md info"
@@ -38,9 +40,10 @@
             политикой обработки персональных данных
           </a>
         </div>
-        <div class="col-12 mt-3">
-          <button :disabled="isLoading" class="btn btn-footer" type="submit" @click="openForm" id="Button">
+        <div class="col-12">
+          <button :disabled="isLoading || !isFormValid" class="btn btn-footer" type="submit" id="Button">
             <span v-if="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span v-else-if="!isFormValid">Форма заполнена не полностью!</span>
             <span v-else>Свяжитесь с нами!</span>
           </button>
         </div>
@@ -61,13 +64,42 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      showForm: true,
+      formData:{
+        lastName: '',
+        userPhone: '',
+        userEmail: '',
+      },
       isLoading: false,
       isFormSubmitted: false,
       errorMessage: '',
     };
   },
+  computed: {
+    isFormValid() {
+      // Добавьте логику для проверки валидности всей формы
+      return (
+          this.isFieldValid('lastName') &&
+          this.isFieldValid('userPhone') &&
+          this.isFieldValid('userEmail')
+          // Дополните для других полей
+      );
+    },
+  },
   methods: {
+    isFieldValid(fieldName) {
+      const value = this.formData[fieldName].trim();
+
+      if (fieldName === 'userPhone') {
+        //должно содержать только цифры и символ '+'
+        return /^[0-9+]+$/.test(value);
+      } else if (fieldName === 'userEmail') {
+        //валидация адреса электронной почты
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      }
+
+      return value !== '';
+    },
+
     saveFormDataToLocalStorage(formData) {
       localStorage.setItem('formData', JSON.stringify(formData));
     },
