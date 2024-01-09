@@ -76,12 +76,10 @@ export default {
   },
   computed: {
     isFormValid() {
-      // Добавьте логику для проверки валидности всей формы
       return (
           this.isFieldValid('lastName') &&
           this.isFieldValid('userPhone') &&
           this.isFieldValid('userEmail')
-          // Дополните для других полей
       );
     },
   },
