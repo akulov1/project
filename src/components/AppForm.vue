@@ -1,56 +1,54 @@
 <template>
-  <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-    <form @submit.prevent="submitForm" id="Form">
-      <div class="form-row">
-        <div class="col-12">
-          <input v-model="formData.lastName" class="form-control opacity-75 p-4 form-control-md info"
-                 type="text"
-                 name="lastName"
-                 placeholder="Ваше имя" autocomplete required>
-          <div v-if="!isFieldValid('lastName')" class="error-message">Пожалуйста, введите ваше имя.</div>
-        </div>
-        <div class="col-12">
-          <input v-model="formData.userPhone" class="form-control opacity-75 p-4 form-control-md info"
-                 type="text"
-                 name="userPhone"
-                 placeholder="Телефон"
-                 autocomplete
-                 pattern="[0-9+]+"
-                 required>
-          <div v-if="!isFieldValid('userPhone')" class="error-message">Введите правильный номер телефона.</div>
-        </div>
-        <div class="col-12">
-          <input v-model="formData.userEmail" class="form-control opacity-75 p-4 form-control-md info"
-                 type="email"
-                 name="userEmail"
-                 placeholder="E-mail"
-                 required>
-          <div v-if="!isFieldValid('userEmail')" class="error-message">Введите правильный адрес электронной почты.</div>
-        </div>
-        <div class="col-12">
-              <textarea class="form-control opacity-75 p-4 form-control-md info"
-                        name="userMsg"
-                        placeholder="Ваш комментарий"
-              ></textarea>
-        </div>
-        <div class="col-12">
-          <input type="checkbox" id="check" required class="info">
-          Согласен с
-          <a class="form-politics" href="#" rel="nofollow">
-            политикой обработки персональных данных
-          </a>
-        </div>
-        <div class="col-12">
-          <button :disabled="isLoading || !isFormValid" class="btn btn-footer" type="submit" id="Button">
-            <span v-if="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            <span v-else-if="!isFormValid">Форма не заполнена!</span>
-            <span v-else>Свяжитесь с нами!</span>
-          </button>
-        </div>
+  <form @submit.prevent="submitForm" id="Form">
+    <div class="form-row">
+      <div class="col-12">
+        <input v-model="formData.lastName" class="form-control opacity-75 p-4 form-control-md info"
+               type="text"
+               name="lastName"
+               placeholder="Ваше имя" autocomplete required>
+        <div v-if="!isFieldValid('lastName')" class="error-message">Пожалуйста, введите ваше имя.</div>
       </div>
-    </form>
-  </transition>
-  <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
+      <div class="col-12">
+        <input v-model="formData.userPhone" class="form-control opacity-75 p-4 form-control-md info"
+               type="text"
+               name="userPhone"
+               placeholder="Телефон"
+               autocomplete
+               pattern="[0-9+]+"
+               required>
+        <div v-if="!isFieldValid('userPhone')" class="error-message">Введите правильный номер телефона.</div>
+      </div>
+      <div class="col-12">
+        <input v-model="formData.userEmail" class="form-control opacity-75 p-4 form-control-md info"
+               type="email"
+               name="userEmail"
+               placeholder="E-mail"
+               required>
+        <div v-if="!isFieldValid('userEmail')" class="error-message">Введите правильный адрес электронной почты.</div>
+      </div>
+      <div class="col-12">
+            <textarea class="form-control opacity-75 p-4 form-control-md info"
+                      name="userMsg"
+                      placeholder="Ваш комментарий"
+            ></textarea>
+      </div>
+      <div class="col-12">
+        <input type="checkbox" id="check" required class="info">
+        Согласен с
+        <a class="form-politics" href="#" rel="nofollow">
+          политикой обработки персональных данных
+        </a>
+      </div>
+      <div class="col-12">
+        <button :disabled="isLoading || !isFormValid" class="btn btn-footer" type="submit" id="Button">
+          <span v-if="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          <span v-else-if="!isFormValid">Форма не заполнена!</span>
+          <span v-else>Свяжитесь с нами!</span>
+        </button>
+      </div>
+    </div>
+  </form>
+  <transition name="fade" @enter="enter" @leave="leave">
     <div v-if="isFormSubmitted" class="col-12 mt-3 text-success">
       Форма успешно отправлена!
     </div>
@@ -132,9 +130,6 @@ export default {
       }
     },
 
-    beforeEnter(el) {
-      el.style.opacity = 0;
-    },
     enter(el, done) {
       let opacity = 0;
       const duration = 500;
